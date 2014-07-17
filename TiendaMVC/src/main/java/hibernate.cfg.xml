@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://luisgilpruebas.cloudapp.net:3306/teide2014?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">teide2014</property>
+    <property name="hibernate.connection.password">teide2014</property>
+    <mapping class="com.igmingo.tienda.modelo.Envios"/>
+    <mapping class="com.igmingo.tienda.modelo.TiendaCategoria"/>
+    <mapping class="com.igmingo.tienda.modelo.Etiqueta"/>
+    <mapping class="com.igmingo.tienda.modelo.EnvioProducto"/>
+    <mapping class="com.igmingo.tienda.modelo.TiendaProducto"/>
+    <mapping class="com.igmingo.tienda.modelo.EnvioProductoId"/>
+  </session-factory>
+</hibernate-configuration>

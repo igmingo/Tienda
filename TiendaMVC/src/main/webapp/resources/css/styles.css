@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+body {
+	text-align: center;
+}
+
+/* Tabla para sacar la lista de productos */
+.CSSTable {
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	text-align:left;
+}
+.CSSTable table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 auto 0 auto;
+	padding: .28rem;
+	border: 5px;
+	width: 50%;
+}
+
+.CSSTable tbody {
+	border: 5px;
+}
+
+.CSSTable th {
+	padding: .28rem;
+	border: 5px;
+	background-color: #005fbf;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.CSSTable tr {
+	padding: .28rem;
+	border: 5px;
+}
+
+.CSSTable tr:nth-child(odd) {
+	background-color: #aad4ff;
+}
+
+.CSSTable tr:nth-child(odd):hover {
+	background-color: #ffff00;
+}
+
+.CSSTable tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+.CSSTable tr:nth-child(even):hover {
+	background-color: #ffff00;
+}
+
+.CSSTable td {
+	padding: .28rem;
+	border: 5px;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* Tabla para sacar los detalles */
+
+.TableDetalles {
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	text-align:left;
+}
+
+.TableDetalles table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 auto 0 auto;
+	padding: .28rem;
+	border: 5px;
+	width: 30%;
+}
+
+.TableDetalles tbody {
+	border: 5px;
+}
+
+.TableDetalles th {
+	padding: .28rem;
+	border: 5px;
+	background-color: #3f7f00;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.TableDetalles tr {
+	padding: .28rem;
+	border: 5px;
+}
+
+.TableDetalles tr:hover {
+	background-color: #ffffff;
+}
+
+.TableDetalles td {
+	vertical-align: middle;
+	background-color: #d4ffaa;
+	border: 5px;
+	text-align: left;
+	padding: .28rem;
+	font-size: 10px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+}
