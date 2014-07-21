@@ -12,7 +12,7 @@
 <body>
 	<input type="text" id="txtBuscar" placeholder="Pon tu búsqueda">
 	<input type="button" id="btnBuscar" value="Buscar" onclick="buscar()"><span class="icon-buscar"></span>
-<!-- 	<a id="btnBuscar" href="javascript:buscar()"><span class="icon-buscar"></span></a> -->
+ 	<a id="btnBuscar" href="javascript:buscar()"><span class="icon-buscar"></span></a>
 	
 <div id="divLista" class="CSSTable">
 	<table id="tblDatos">

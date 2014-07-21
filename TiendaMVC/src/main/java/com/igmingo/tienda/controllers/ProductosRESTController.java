@@ -30,13 +30,14 @@ public class ProductosRESTController {
 	
 
 	@RequestMapping (method=RequestMethod.GET, value="/buscar/{texto}")
+	
 	public @ResponseBody List<TiendaProducto> buscar(@PathVariable String texto) {
 		
 		if(texto.equals("BusquedA_VaciA"))
 			texto="";
 		
-		Map<String, Object> params=new HashMap();
-		params.put("texto", "%" + texto + "%");
+		Map<String, Object> params=new HashMap<String, Object>();
+		params.put("textobuscar", "%" + texto + "%");
 		List<TiendaProducto> le=dao.find("producto.buscador", params);
 
 		return le;
