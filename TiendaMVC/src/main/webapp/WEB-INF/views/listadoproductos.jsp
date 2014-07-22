@@ -12,8 +12,7 @@
 <body>
 	<input type="text" id="txtBuscar" placeholder="Pon tu búsqueda">
 	<input type="button" id="btnBuscar" value="Buscar" onclick="buscar()"><span class="icon-buscar"></span>
- 	<a id="btnBuscar" href="javascript:buscar()"><span class="icon-buscar"></span></a>
-	
+ 	<a id="btnBuscar" href="javascript:buscar()"><span class="icon-buscar"></span></a><br/>
 <div id="divLista" class="CSSTable">
 	<table id="tblDatos">
  	<thead><tr><th>Producto</th><th>Precio</th><th>Acciones</th></tr></thead>
@@ -29,6 +28,7 @@
 		</c:forEach>
 	</tbody></table>
 </div>
+<a id="btnAlta" href="altaProducto.html">Alta de Producto</a>
 <div class="TableDetalles" id="divDetalle">
 </div>
 </body>

@@ -17,7 +17,7 @@
       p:location="/WEB-INF/jdbc.properties" />
   -->        
     
-<context:component-scan base-package="com.igmingo.empleados" />  
+<context:component-scan base-package="com.igmingo.tienda" />  
 
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -55,7 +55,11 @@
  
  <!-- 	Nuestras Clases, el dao (objeto de acceso a datos) es el repositorio -->
  <!-- 	Le inyectamos la sesionFactory que hemos definido arriba -->
-  <bean id="daoProducto" class="com.igmingo.tienda.repositorios.RepositorioProductos">
+  <bean id="daoProductos" class="com.igmingo.tienda.repositorios.RepositorioProductos">
+     <property name="sessionFactory" ref="sessionFactory" />
+ </bean>
+ 
+ <bean id="daoCategorias" class="com.igmingo.tienda.repositorios.RepositorioCategorias">
      <property name="sessionFactory" ref="sessionFactory" />
  </bean>
  
