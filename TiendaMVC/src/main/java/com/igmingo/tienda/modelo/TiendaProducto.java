@@ -32,7 +32,6 @@ import org.hibernate.annotations.NamedQuery;
 @NamedQuery (name="producto.buscador", query="from TiendaProducto e where e.nombre like :textobuscar")
 public class TiendaProducto  implements java.io.Serializable {
 
-
      /**
 	 * 
 	 */

@@ -7,7 +7,7 @@
 <title>Detalle del producto</title>
 </head>
 <body>
-	<table><table><tr><th>Detalle de Producto</th></tr>
+	<table><tr><th>Detalle de Producto</th></tr>
 		<tr>
 			<td>Nombre</td>
 			<td>${producto.nombre}</td>

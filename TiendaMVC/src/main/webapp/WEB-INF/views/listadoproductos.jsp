@@ -21,9 +21,12 @@
 			<tr>
 				<td>${prod.nombre }</td>
 				<td>${prod.precio } €</td>			
-				<td><a href="detalle-${prod.idProducto}.html"><span class="icon-ver"></span> Ver</a>
-				<a href="#" id="lnkDetalle" onclick="evento(${prod.idProducto})"><span class="icon-ver"></span> Detalles </a>
-				<a href="#" id="lnkBorrar" onclick="borrar(${prod.idProducto})"><span class="icon-eliminar"></span> Eliminar </a></td>
+				<td>
+				<a href="modificarProducto.html/${prod.idProducto}"><span class="icon-ver"></span></a>
+				<a href="detalle-${prod.idProducto}.html"><span class="icon-ver"></span></a>
+				<a href="#" id="lnkDetalle" onclick="evento(${prod.idProducto})"><span class="icon-ver"></span></a>
+				<a href="#" id="lnkBorrar" onclick="borrar(${prod.idProducto})"><span class="icon-eliminar"></span></a>
+				</td>
 			</tr>
 		</c:forEach>
 	</tbody></table>
